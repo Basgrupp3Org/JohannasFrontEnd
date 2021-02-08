@@ -14,6 +14,14 @@ const addParagraph = (data) =>
     // paragraphDiv.appendChild(para) // <div><p>.......</div>
 }
 
+const HandleLogin = (data) => {
+    if(data === false){
+        alert("Account does not exist,\ntry again with valid credentials");
+    } else if (data === true){
+        // insert code för hantering av lyckad inloggning
+    }
+}
+
 
 loginForm.onsubmit = (e) => {
     e.preventDefault()
@@ -33,7 +41,7 @@ loginForm.onsubmit = (e) => {
         body: JSON.stringify(requestObject)
     })
     .then(data => data.json())
-    .then(data =>  { console.log(data) }) 
+    .then(data =>  { console.log(data), HandleLogin(data) }) 
     .catch((err) => {
         console.error(err);
     })
