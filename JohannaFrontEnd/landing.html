@@ -17,17 +17,17 @@
     </style>
 </head>
 <body>
-    <button class="register">Register</button>
-    <button class="login">Login</button>
+    <button id="register">Register</button>
+    <button id="login">Login</button>
 
     <script>
     
-    const btn = document.querySelector('.register')
+    const btn = document.getElementById('register')
     btn.addEventListener('click', () => {
         document.location = "register.html";
     })
 
-    const btn1 = document.querySelector('.login')
+    const btn1 = document.getElementById('login')
     btn1.addEventListener('click', () => {
         document.location = "login.html";
     })
