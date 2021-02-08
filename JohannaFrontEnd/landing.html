@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <style>
+        button{
+            width: 15%;
+            height: 25px;
+            padding: 15px;
+            margin-left: 10%;
+            margin-right: auto;
+            margin-top: 20%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="register">Register</button>
+    <button class="login">Login</button>
+
+    <script>
+    const btn = document.querySelector('button')
+    btn.addEventListener('click', (b) => {
+        if(b.target.classlist.contains("register")){
+            window.location.href="./register.html"
+        }
+    })
+    </script>
+</body>
+</html>
