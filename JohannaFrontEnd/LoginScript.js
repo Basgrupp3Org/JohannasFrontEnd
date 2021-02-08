@@ -14,25 +14,6 @@ const addParagraph = (data) =>
     // paragraphDiv.appendChild(para) // <div><p>.......</div>
 }
 
-// const getUser = () => {
-//     console.log('Nu börjar vi.')
-
-
-
-//     fetch('http://localhost:65424/api/User/Login')
-//         .then((response) => { return response.json() })
-//         .then((data) => {
-//             console.log(data)
-//             return data;
-//         })
-//         // .then((data) => {
-//         //     addParagraph(data)
-//         // })
-//         .catch(() => {
-//             console.log('Det gick fel')
-//         })
-// }
-
 
 loginForm.onsubmit = (e) => {
     e.preventDefault()
