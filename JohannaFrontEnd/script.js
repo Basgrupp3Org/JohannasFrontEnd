@@ -9,7 +9,7 @@ registerForm.onsubmit = (e) => {
         
     }
 
-    fetch('http://localhost:62473/api/User', {
+    fetch('http://localhost:65424/api/User/Register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
