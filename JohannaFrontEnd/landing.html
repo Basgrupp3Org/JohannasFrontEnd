@@ -21,12 +21,20 @@
     <button class="login">Login</button>
 
     <script>
-    const btn = document.querySelector('button')
-    btn.addEventListener('click', (b) => {
-        if(b.target.classlist.contains("register")){
-            window.location.href="./register.html"
-        }
+    
+    const btn = document.querySelector('.register')
+    btn.addEventListener('click', () => {
+        document.location = "register.html";
     })
+
+    const btn1 = document.querySelector('.login')
+    btn1.addEventListener('click', () => {
+        document.location = "login.html";
+    })
+
+    
+
+
     </script>
 </body>
 </html>
