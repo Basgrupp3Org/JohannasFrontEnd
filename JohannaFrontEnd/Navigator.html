@@ -40,11 +40,20 @@
 <body>
     <div class="nav">
     
-        <a href="">HOME</a><a href="">Register Purchase</a><a href="">Observ Budget</a><a href="">Create Budget</a><a href="">History</a><a href="">Log Out</a>
+        <a id="index" href="./index.html">HOME</a><a href="./RegisterPurchase.html">Register Purchase</a><a href="">Observ Budget</a><a href="">Create Budget</a><a href="">History</a><a href="">Log Out</a>
        
     
         
  
 </div>
+<script>
+
+const LoginButton = document.getElementById('index')
+LoginButton.addEventListener('click', () => {
+
+    document.location = "index.html";
+})
+
+</script>
 </body>
 </html>
