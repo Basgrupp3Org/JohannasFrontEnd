@@ -19,6 +19,7 @@ const HandleLogin = (data) => {
         alert("Account does not exist,\ntry again with valid credentials");
     } else if (data === true){
         // insert code för hantering av lyckad inloggning
+        document.location = "index.html";
     }
 }
 

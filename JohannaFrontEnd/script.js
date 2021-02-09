@@ -1,7 +1,18 @@
 
+
+
+const HandleLogin = (data) => {
+    if(data === false){
+        alert("Account alredy exists,\ntry again with different credentials");
+    } else if (data === true){
+        alert("Account register!\nLogin to Access Johannas Bank App")
+    }
+}
+
+
 registerForm.onsubmit = (e) => {
     e.preventDefault()
-    console.log(e)
+   
 
     let requestObject = {
         Username: e.target[0].value,
@@ -15,6 +26,11 @@ registerForm.onsubmit = (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(requestObject)
+    })
+    .then(data => data.json())
+    .then(data =>  { console.log(data), HandleLogin(data) }) 
+    .catch((err) => {
+        console.error(err);
     })
 
     console.log(requestObject)
